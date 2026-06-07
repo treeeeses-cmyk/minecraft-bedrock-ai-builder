@@ -2,7 +2,39 @@
 
 AI-powered building assistant for Minecraft Bedrock Edition using OpenRouter API.
 
-**[📥 СКАЧАТЬ АДДОН - ГОТОВЫЙ К ИСПОЛЬЗОВАНИЮ](https://github.com/treeeeses-cmyk/minecraft-bedrock-ai-builder/releases/download/v1.0.0/minecraft-ai-builder.mcaddon)**
+## 🚀 Быстрый старт - Скачайте и используйте!
+
+### Вариант 1: Скачать как ZIP (Самый простой)
+
+1. **Нажмите зелёную кнопку "Code"** на странице репозитория
+2. **Выберите "Download ZIP"**
+3. **Распакуйте файл** в удобное место
+4. **Откройте папку** и следуйте шагам ниже
+
+### Вариант 2: Использовать Git
+
+```bash
+git clone https://github.com/treeeeses-cmyk/minecraft-bedrock-ai-builder.git
+cd minecraft-bedrock-ai-builder
+```
+
+## ⚡ Установка (2 команды)
+
+```bash
+# Установите зависимости
+npm install
+
+# Запустите аддон
+npm start
+```
+
+**Готово! ✅ Аддон установлен и работает!**
+
+---
+
+## 📖 Полная инструкция
+
+👉 **[Читайте подробный гайд установки в INSTALL.md](INSTALL.md)**
 
 ## Features
 
@@ -11,91 +43,90 @@ AI-powered building assistant for Minecraft Bedrock Edition using OpenRouter API
 - 💬 **Natural Language**: Just describe what you want to build!
 - ⚡ **Fast Generation**: Rapid structure creation
 
-## 🚀 Quick Start (2 шага!)
+## 🎮 Использование
 
-### 1. Скачайте аддон
-[**📥 Скачать minecraft-ai-builder.mcaddon**](https://github.com/treeeeses-cmyk/minecraft-bedrock-ai-builder/releases/download/v1.0.0/minecraft-ai-builder.mcaddon)
-
-### 2. Откройте в Minecraft Bedrock
-- Двойной клик на файл `.mcaddon`
-- Minecraft автоматически установит аддон
-- Готово! ✅
-
-## Usage
-
-Once the addon is installed, use in Minecraft:
+После установки в Minecraft используйте:
 
 ```
-/build create a modern house with 2 floors
+/build create a modern house
 /build build a castle
-/build make a simple farm
+/build make a farm
 ```
 
-## How It Works
+## Как это работает?
 
-1. **User Input**: Player types a building request
-2. **AI Processing**: OpenRouter generates a detailed build plan
-3. **Conversion**: Plan is converted to Minecraft block coordinates
-4. **Building**: Blocks are placed automatically in the world
+1. **Вводите команду**: `/build описание что вы хотите`
+2. **AI генерирует план**: OpenRouter создаёт детальный план постройки
+3. **Блоки преобразуются**: План конвертируется в координаты блоков
+4. **Строится автоматически**: Блоки размещаются в мире Minecraft
 
-## Prerequisites
+## Требования
 
-- Minecraft Bedrock Edition (Windows 10/11, Xbox, Mobile)
-- Internet connection
-- API key (уже включен в аддон!)
+- ✅ Minecraft Bedrock Edition (Windows 10/11, Xbox, Mobile)
+- ✅ Интернет соединение
+- ✅ Node.js 16+ (для запуска)
+- ✅ API ключ **уже настроен!**
 
-## Project Structure
+## Структура проекта
 
 ```
 .
 ├── src/
-│   ├── index.js              # Main entry point
-│   ├── ai-builder.js         # AI planning logic
-│   └── minecraft-handler.js  # Minecraft integration
-├── manifest.json             # Behavior pack manifest
-├── package.json              # Dependencies
-└── .env.example              # Environment template
+│   ├── index.js              # Главный файл
+│   ├── ai-builder.js         # AI логика
+│   └── minecraft-handler.js  # Интеграция с Minecraft
+├── manifest.json             # Конфигурация аддона
+├── package.json              # Зависимости
+├── .env                       # API ключ (уже настроен!)
+└── INSTALL.md                # Инструкция
 ```
 
-## Configuration
+## Настройка
 
-Edit `.env` to customize:
+Отредактируйте `.env` для изменения:
 
-- `OPENROUTER_API_KEY`: Your API key (already set!)
-- `AI_MODEL`: LLM model to use
-- `MAX_BUILD_SIZE`: Maximum build dimensions
-- `BUILD_TIMEOUT`: Time limit for build generation
+```env
+OPENROUTER_API_KEY=sk-or-v1-... # API ключ (уже установлен!)
+AI_MODEL=meta-llama/llama-2-70b-chat
+MAX_BUILD_SIZE=50
+BUILD_TIMEOUT=60000
+```
 
-## Documentation
+## Документация
 
-- [Setup Guide](docs/SETUP.md) - Complete installation instructions
-- [API Documentation](docs/API.md) - Class and method reference
-- [Advanced Features](docs/ADVANCED.md) - Custom models and integrations
+- **[📥 INSTALL.md](INSTALL.md)** - Как установить (начните отсюда!)
+- **[docs/SETUP.md](docs/SETUP.md)** - Полная инструкция установки
+- **[docs/API.md](docs/API.md)** - Справка по API
+- **[docs/ADVANCED.md](docs/ADVANCED.md)** - Продвинутые функции
 
-## Roadmap
+## Планы развития
 
 - [x] AI-powered building
 - [x] OpenRouter integration
-- [x] Ready-to-download addon
-- [ ] Real WebSocket connection to Minecraft server
-- [ ] Advanced structure parsing
+- [x] Pre-configured
+- [x] Ready to download & use
+- [ ] Minecraft WebSocket connection
+- [ ] Better structure parsing
 - [ ] Multi-player support
-- [ ] Save/load build templates
+- [ ] Build templates
 - [ ] Build history
-- [ ] Schematic format support
 
-## License
+## Лицензия
 
 MIT
 
-## Contributing
+## Помощь и вопросы
 
-Feel free to submit issues and pull requests!
+Если что-то не работает:
+1. 📖 Прочитайте [INSTALL.md](INSTALL.md)
+2. 🔍 Проверьте, что установлен **Minecraft Bedrock** (не Java Edition)
+3. 🌐 Убедитесь в интернет соединении
+4. 💬 Откройте Issue на GitHub
 
 ---
 
-**Made with ❤️ for Minecraft builders**
+**Made with ❤️ by treeeeses-cmyk**
 
-**Статус**: ✅ Готово к использованию
-**Версия**: 1.0.0
-**Дата релиза**: June 7, 2026
+**Status**: ✅ Ready to use
+**Version**: 1.0.0
+**Release**: June 7, 2026
