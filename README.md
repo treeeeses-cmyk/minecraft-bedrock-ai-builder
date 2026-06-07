@@ -2,6 +2,8 @@
 
 AI-powered building assistant for Minecraft Bedrock Edition using OpenRouter API.
 
+**[📥 СКАЧАТЬ АДДОН - ГОТОВЫЙ К ИСПОЛЬЗОВАНИЮ](https://github.com/treeeeses-cmyk/minecraft-bedrock-ai-builder/releases/download/v1.0.0/minecraft-ai-builder.mcaddon)**
+
 ## Features
 
 - 🧠 **AI-Powered Designs**: Uses OpenRouter (Llama 2) to generate building plans
@@ -9,39 +11,19 @@ AI-powered building assistant for Minecraft Bedrock Edition using OpenRouter API
 - 💬 **Natural Language**: Just describe what you want to build!
 - ⚡ **Fast Generation**: Rapid structure creation
 
-## Prerequisites
+## 🚀 Quick Start (2 шага!)
 
-- Node.js 16+
-- OpenRouter API Key ([get one here](https://openrouter.io))
-- Minecraft Bedrock Edition
+### 1. Скачайте аддон
+[**📥 Скачать minecraft-ai-builder.mcaddon**](https://github.com/treeeeses-cmyk/minecraft-bedrock-ai-builder/releases/download/v1.0.0/minecraft-ai-builder.mcaddon)
 
-## Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/treeeeses-cmyk/minecraft-bedrock-ai-builder.git
-cd minecraft-bedrock-ai-builder
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Setup environment variables:
-```bash
-cp .env.example .env
-# Edit .env and add your OpenRouter API key
-```
-
-4. Run the application:
-```bash
-npm start
-```
+### 2. Откройте в Minecraft Bedrock
+- Двойной клик на файл `.mcaddon`
+- Minecraft автоматически установит аддон
+- Готово! ✅
 
 ## Usage
 
-Once the server is running, use in Minecraft:
+Once the addon is installed, use in Minecraft:
 
 ```
 /build create a modern house with 2 floors
@@ -55,6 +37,12 @@ Once the server is running, use in Minecraft:
 2. **AI Processing**: OpenRouter generates a detailed build plan
 3. **Conversion**: Plan is converted to Minecraft block coordinates
 4. **Building**: Blocks are placed automatically in the world
+
+## Prerequisites
+
+- Minecraft Bedrock Edition (Windows 10/11, Xbox, Mobile)
+- Internet connection
+- API key (уже включен в аддон!)
 
 ## Project Structure
 
@@ -73,7 +61,7 @@ Once the server is running, use in Minecraft:
 
 Edit `.env` to customize:
 
-- `OPENROUTER_API_KEY`: Your API key
+- `OPENROUTER_API_KEY`: Your API key (already set!)
 - `AI_MODEL`: LLM model to use
 - `MAX_BUILD_SIZE`: Maximum build dimensions
 - `BUILD_TIMEOUT`: Time limit for build generation
@@ -86,6 +74,9 @@ Edit `.env` to customize:
 
 ## Roadmap
 
+- [x] AI-powered building
+- [x] OpenRouter integration
+- [x] Ready-to-download addon
 - [ ] Real WebSocket connection to Minecraft server
 - [ ] Advanced structure parsing
 - [ ] Multi-player support
@@ -104,3 +95,7 @@ Feel free to submit issues and pull requests!
 ---
 
 **Made with ❤️ for Minecraft builders**
+
+**Статус**: ✅ Готово к использованию
+**Версия**: 1.0.0
+**Дата релиза**: June 7, 2026
